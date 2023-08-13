@@ -33,7 +33,10 @@ const SignUp = () => {
   return (
     <>
       <Particles />
-      <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20 shadow-2xl mt-4 rounded-2xl">
+      <div className="max-w-[400px] relative mx-auto min-h-[600px] px-4 py-20 shadow-2xl mt-16 rounded-2xl">
+        <div className="bg-red-400 absolute text-white md:mt-24 px-3  right-[-45px] rotate-90">
+          <span className="">Client Side</span>
+        </div>
         <div className="mb-4 text-center font-bold text-2xl">SignUp</div>
         {error ? (
           <div className="flex relative w-full">

@@ -47,7 +47,10 @@ const CoinSearch = () => {
     );
   } else {
     return (
-      <div className="rounded-xl shadow-orange-100 shadow-[0_5px_60px_5px_rgba(0,0,0,0.3)]  md:p-10 mt-20 p-2">
+      <div className="rounded-xl relative shadow-orange-100 shadow-[0_5px_60px_5px_rgba(0,0,0,0.3)]  md:p-10 mt-20 p-2">
+        <div className="bg-red-400 absolute text-white md:mt-24 mt-10 px-3  right-[-45px] rotate-90">
+          <span className="">Client Side</span>
+        </div>
         <div className="flex flex-col md:flex-row justify-between pt-4 pb-6 text-center md:text-right">
           <h1 className="font-bold text-xl my-2">Search Crypto</h1>
           <form>

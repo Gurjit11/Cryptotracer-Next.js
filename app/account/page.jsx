@@ -20,7 +20,10 @@ const Account = () => {
   } else {
     return (
       <>
-        <div className="md:m-8 pt-5">
+        <div className="md:m-8 relative pt-9">
+          <div className="bg-red-400 absolute text-white mt-24 px-3  right-[-45px] rotate-90">
+            <span className="">Client Side</span>
+          </div>
           <div className="bg-white rounded-xl shadow-2xl sm:m-2 p-3">
             <h1 className="font-bold text-xl m-2">Account</h1>
             <div className="flex flex-col md:flex-row justify-between mx-2 md:items-center items-start">

@@ -16,7 +16,10 @@ const TrendingCoins = async () => {
   const coins = data.coins;
   // console.log(coins);
   return (
-    <div className="rounded-xl shadow-blue-100  shadow-[0_5px_60px_5px_rgba(0,0,0,0.3)] md:p-10 p-2 mt-10 ">
+    <div className="rounded-xl relative shadow-blue-100  shadow-[0_5px_60px_5px_rgba(0,0,0,0.3)] md:p-10 p-2 mt-10 ">
+      <div className="bg-green-400 absolute text-white mt-24 px-3  right-[-45px] rotate-90">
+        <span className="">Server Side</span>
+      </div>
       <p className="font-bold text-xl text-left w-full">Trending Coins</p>
       <div className=" grid md:grid-cols-2 lg:grid-cols-3">
         {coins?.map((coin, id) => (

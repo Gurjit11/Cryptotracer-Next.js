@@ -21,7 +21,10 @@ const Page = async ({ params }) => {
   const coin = await getData(params.id);
   //   console.log(coin);
   return (
-    <div className="m-1  md:m-6 md:p-3 p-1 rounded-xl shadow-2xl">
+    <div className="m-1 relative  md:m-6 md:p-3 p-1 rounded-xl shadow-2xl">
+      <div className="bg-green-400 absolute text-white mt-24 px-3  right-[-45px] rotate-90">
+        <span className="">Server Side</span>
+      </div>
       <div className="flex pt-10">
         <img className="w-20" src={coin.image?.large} alt={coin?.name} />
         <div className="m-1 p-1">

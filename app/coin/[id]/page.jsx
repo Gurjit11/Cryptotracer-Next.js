@@ -17,6 +17,15 @@ async function getData(id) {
   return res.json();
 }
 
+export async function generateMetadata({ params }) {
+  const coin = await getData(params.id);
+
+  return {
+    title: coin.name,
+    description: coin.description,
+  };
+}
+
 const Page = async ({ params }) => {
   const coin = await getData(params.id);
   //   console.log(coin);

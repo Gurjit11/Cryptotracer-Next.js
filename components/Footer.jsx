@@ -54,7 +54,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-xs py-4">Powered by Coin Gecko</p>
+        <p className="text-center text-xs py-4">
+          Powered with Coin Gecko & Built by Gurjit Singh
+        </p>
       </div>
     </div>
   );
